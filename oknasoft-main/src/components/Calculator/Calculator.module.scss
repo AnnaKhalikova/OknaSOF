@@ -1,0 +1,179 @@
+.consult {
+  padding: 80px 100px 25px 100px;
+  color: var(--dark);
+}
+
+.title {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 40px;
+  color: var(--green);
+}
+
+.subtitle {
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.img {
+  width: 30%;
+}
+
+.formWrapper {
+  width: 60%;
+  min-width: 500px;
+  max-width: 750px;
+  margin-left: 50px;
+}
+
+.flexRow {
+  margin: 20px 0;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.formItem {
+  label {
+    font-size: 12px;
+  }
+}
+
+.buttons {
+  margin-top: 10px;
+}
+
+.input {
+  width: 100%;
+  resize: none;
+}
+
+.inputNum {
+  margin-top: 10px;
+}
+
+.btn {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 20px 0;
+  background-color: var(--green);
+  width: calc(50% - 18px);
+  height: 40px;
+  padding: 10px 0;
+  border-radius: 4px;
+  font-weight: 600;
+  color: #fff;
+
+  font-size: 15px;
+
+  cursor: pointer;
+
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: var(--dark_green);
+  }
+}
+
+.loading {
+  opacity: 0.5;
+  cursor: wait;
+}
+
+@media (max-width: 576px) {
+  .btn {
+    width: 100%;
+  }
+}
+
+@media (max-height: 360px) {
+  .btn {
+    margin: 10px 0;
+  }
+}
+
+.flex {
+  display: flex;
+  gap: 36px;
+  .formItem {
+    width: 50%;
+    margin: 0;
+  }
+}
+
+.notice {
+  margin-top: 15px;
+  font-size: 10px;
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  .title {
+    text-align: center;
+  }
+  .formWrapper {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 50px;
+  }
+  .img {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  .consult {
+    padding: 80px 50px 25px 50px;
+  }
+  .formWrapper {
+    min-width: 250px;
+  }
+}
+
+@media (max-width: 576px) {
+  .consult {
+    padding: 80px 25px 25px 25px;
+  }
+
+  .formWrapper {
+    padding: 20px;
+  }
+  .flex {
+    flex-direction: column;
+    gap: 20px;
+    .formItem {
+      width: 100%;
+      margin: 0;
+    }
+  }
+  .flexRow {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .img {
+    width: 80%;
+  }
+}
+@media (max-width: 360px) {
+  .consult {
+    padding: 80px 0 25px 0;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .subtitle {
+    text-align: center;
+  }
+}

@@ -1,0 +1,117 @@
+.consult {
+  padding: 80px 100px 25px 100px;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 40px;
+  color: var(--green);
+  padding: 0 25px;
+}
+
+.subtitle {
+  margin-bottom: 35px;
+  font-size: 18px;
+  color: var(--dark);
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.img {
+  width: 30%;
+}
+
+.formWrapper {
+  width: 60%;
+  min-width: 500px;
+  max-width: 750px;
+  margin-left: 50px;
+}
+
+.formItem {
+  margin: 20px 0;
+}
+
+.input {
+  width: 100%;
+  background-color: transparent;
+  resize: none;
+  border: 1px solid var(--dark_green);
+  background-color: #ffffff86;
+}
+
+.flex {
+  display: flex;
+  gap: 36px;
+  .formItem {
+    width: 50%;
+    margin: 0;
+  }
+}
+
+.notice {
+  margin-top: 15px;
+  font-size: 10px;
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  .title {
+    text-align: center;
+  }
+  .formWrapper {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 50px;
+  }
+  .img {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  .consult {
+    padding: 80px 50px 25px 50px;
+  }
+  .formWrapper {
+    min-width: 250px;
+  }
+}
+
+@media (max-width: 576px) {
+  .consult {
+    padding: 80px 25px 25px 25px;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .formWrapper {
+    padding: 20px;
+  }
+  .flex {
+    flex-direction: column;
+    gap: 20px;
+    .formItem {
+      width: 100%;
+      margin: 0;
+    }
+  }
+  .img {
+    width: 80%;
+  }
+}
+@media (max-width: 360px) {
+  .consult {
+    padding: 80px 0 25px 0;
+  }
+
+  .subtitle {
+    text-align: center;
+  }
+}

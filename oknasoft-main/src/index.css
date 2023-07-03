@@ -1,0 +1,38 @@
+@import "./css/normalize.css";
+@import "./css/color-variables.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&display=swap");
+
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+@import "react-accessible-accordion/dist/fancy-example.css";
+@import "primereact/resources/themes/lara-light-indigo/theme.css";
+@import "primereact/resources/primereact.min.css";
+@import "primeicons/primeicons.css";
+@import "./css/theme.css";
+
+* {
+  font-family: "Figtree", sans-serif;
+}
+
+.slick-dots li button:before {
+  font-size: 10px;
+}
+
+.slick-dots li.slick-active button:before {
+  font-size: 12px;
+  color: var(--green);
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  margin: -1px;
+
+  clip: rect(0 0 0 0);
+}

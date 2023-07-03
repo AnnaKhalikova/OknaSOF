@@ -1,0 +1,54 @@
+.burgerBtn {
+  position: relative;
+  display: block;
+
+  width: 40px;
+  height: 24px;
+
+  div {
+    position: absolute;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: var(--dark);
+
+    transition: all 0.2s ease;
+
+    &:nth-child(1) {
+      top: 0;
+    }
+    &:nth-child(2) {
+      top: 50%;
+      transform: translateY(-50%);
+      width: 80%;
+    }
+    &:nth-child(3) {
+      bottom: 0;
+    }
+  }
+
+  &:hover div {
+    background-color: var(--green);
+  }
+  &:focus div {
+    background-color: var(--green);
+  }
+}
+
+.active {
+  div:nth-child(2) {
+    opacity: 0;
+    width: 0;
+  }
+
+  div:nth-child(1) {
+    top: 11px;
+    transform: rotate(45deg);
+  }
+
+  div:nth-child(3) {
+    bottom: 11px;
+    transform: rotate(-45deg);
+  }
+}

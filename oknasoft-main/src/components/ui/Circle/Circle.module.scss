@@ -1,0 +1,87 @@
+@import "../../../scss/keyframes.scss";
+
+.circle {
+  position: fixed !important;
+  bottom: 40px;
+  left: 40px;
+}
+
+.circleBtn {
+  position: relative;
+  box-sizing: border-box !important;
+
+  padding: 0;
+  width: 60px !important;
+  height: 60px !important;
+
+  border: 2px solid #fff !important;
+  border-radius: 50%;
+
+  background-color: var(--green) !important;
+
+  transition: all 0.5s ease;
+
+  animation: flicker 4s linear infinite;
+
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+
+    border: 2px solid var(--green);
+    border-radius: 50%;
+
+    pointer-events: none;
+
+    transform: translateX(-50%) translateY(-50%);
+
+    animation: radio 4s linear infinite;
+  }
+
+  &::after {
+    content: url(../../../assets/icons/feedback.svg);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  div {
+    display: none;
+  }
+
+  &:hover {
+    transform: scale(110%);
+    animation: none;
+  }
+}
+
+.active {
+  content: url(../../../assets/icons/cross.svg);
+
+  animation: none;
+}
+
+.circleItem {
+  box-sizing: border-box !important;
+  padding: 0;
+  width: 60px !important;
+  height: 60px !important;
+  border: 2px solid #fff !important;
+
+  color: #fff !important;
+
+  div {
+    font-size: 30px;
+  }
+
+  &:hover {
+    transform: scale(110%);
+  }
+}

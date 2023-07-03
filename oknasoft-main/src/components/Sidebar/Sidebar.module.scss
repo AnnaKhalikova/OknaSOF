@@ -1,0 +1,118 @@
+.sidebar {
+  position: absolute;
+  top: 70px;
+  right: 0;
+  z-index: -5;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  width: 0;
+  height: calc(100vh - 70px);
+
+  background-color: #ffffffea;
+  box-shadow: -8px 12px 8px 4px rgba(52, 79, 90, 0.2);
+  border-top: 2px solid var(--green);
+
+  transition: opacity 0.5s ease;
+
+  opacity: 0;
+}
+
+.active {
+  overflow: visible;
+
+  width: 200px;
+
+  opacity: 1;
+}
+
+.sidebarList {
+  padding: 10px;
+}
+
+.sidebarItem {
+  position: relative;
+  display: block;
+  color: var(--dark);
+  padding-bottom: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  margin: 20px 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+
+    width: 20px;
+    height: 2px;
+
+    background-color: var(--green);
+
+    transition: all 0.5s ease;
+  }
+
+  &:hover {
+    color: var(--green);
+  }
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+.phone {
+  display: none;
+  align-items: center;
+
+  color: var(--dark);
+  font-size: 15px;
+  font-weight: 700;
+
+  transition: color 0.2s ease;
+
+  cursor: pointer;
+}
+
+.feedbackBtn {
+  position: relative;
+  display: none;
+  align-items: center;
+  min-width: 180px;
+  height: 40px;
+  padding: 2px 10px;
+  margin: 20px 0;
+
+  border-radius: 10px;
+  background-color: var(--green);
+
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: var(--dark_green);
+  }
+}
+
+.contactsImg {
+  margin-right: 10px;
+  height: 35px;
+}
+
+@media (max-width: 768px) {
+  .phone {
+    display: flex;
+  }
+
+  .feedbackBtn {
+    display: flex;
+  }
+}

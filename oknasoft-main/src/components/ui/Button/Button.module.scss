@@ -1,0 +1,90 @@
+.btn {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 20px 0;
+  background-color: var(--green);
+  // width: 250px;
+  height: 40px;
+  padding: 10px 0;
+  // border: 1px solid var(--dark_green);
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  &::after {
+    position: absolute;
+    z-index: 1;
+    content: "";
+    top: -30px;
+    right: -30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--dark_green);
+
+    transition: transform 0.5s ease;
+  }
+
+  &::before {
+    position: absolute;
+    z-index: 1;
+    content: "";
+    bottom: -30px;
+    left: -30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--dark_green);
+
+    transition: transform 0.5s ease;
+  }
+
+  &:hover::after,
+  &:hover::before {
+    // background-color: var(--dark_green);
+    transform: scale(900%);
+  }
+}
+
+.btnText {
+  font-size: 15px;
+  z-index: 5;
+}
+
+.icon {
+  position: absolute;
+  right: -15px;
+}
+
+.formBtn {
+  width: calc(50% - 18px);
+}
+
+.loading {
+  opacity: 0.5;
+  cursor: wait;
+}
+
+@media (max-width: 576px) {
+  .formBtn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  .btn {
+    width: 100%;
+  }
+}
+
+@media (max-height: 360px) {
+  .btn {
+    margin: 10px 0;
+  }
+}
