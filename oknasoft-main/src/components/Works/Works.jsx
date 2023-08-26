@@ -1,7 +1,9 @@
 import { useRef } from "react";
 import styles from "./Works.module.scss";
 import Slider from "react-slick";
-import empty from "../../assets/icons/photos.png";
+import livingRoom from "../../assets/images/photo_2023-07-29_23-12-10.png";
+import kitchen from "../../assets/images/photo_2023-07-29_23-12-38.png";
+import bedroom from "../../assets/images/photo_2023-07-29_23-12-49.png";
 
 export const Works = ({ worksRef }) => {
   const sliderRef = useRef();
@@ -36,11 +38,9 @@ export const Works = ({ worksRef }) => {
   };
 
   const slides = [
-    { src: empty, alt: "photo" },
-    { src: empty, alt: "photo" },
-    { src: empty, alt: "photo" },
-    { src: empty, alt: "photo" },
-    { src: empty, alt: "photo" },
+    { src: livingRoom, alt: "livingRoom" },
+    { src: kitchen, alt: "kitchen" },
+    { src: bedroom, alt: "bedroom" },
   ];
 
   return (
