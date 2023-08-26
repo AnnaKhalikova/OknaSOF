@@ -1,0 +1,8 @@
+{
+  "token": "511779c99627dea2-7043add9cda9ca7c-9766d2a0e60ff436",
+  "uri": "oknasofbot",
+  "name": "OknaSofBot",
+  "expose_domain": "https://localhost:3000",
+  "expose_uri_path": "/viber/webhook",
+  "port": 3000
+}

@@ -1,0 +1,15 @@
+{"level":"info","message":"Application is running! Port: 8080"}
+{"level":"info","message":"Sending 'setWebhook' request for url: %s, isInline: %s"}
+{"chat_hostname":"SN-CHAT-03_","level":"error","message":"Response error","status":1,"status_message":"URL not valid or not HTTPS"}
+{"level":"info","message":"Application is running! Port: 8080"}
+{"level":"info","message":"Sending 'setWebhook' request for url: %s, isInline: %s"}
+{"chat_hostname":"SN-CHAT-03_","level":"error","message":"Response error","status":1}
+{"level":"info","message":"Application is running! Port: 8080"}
+{"level":"info","message":"Sending 'setWebhook' request for url: %s, isInline: %s"}
+{"chat_hostname":"SN-CHAT-12_","level":"error","message":"Response error","status":1}
+{"level":"info","message":"Application is running! Port: 8080"}
+{"level":"info","message":"Sending 'setWebhook' request for url: %s, isInline: %s"}
+{"chat_hostname":"SN-CHAT-01_","level":"error","message":"Response error","status":1}
+{"level":"info","message":"Application is running! Port: 3000"}
+{"level":"info","message":"Sending 'setWebhook' request for url: %s, isInline: %s"}
+{"chat_hostname":"SN-CHAT-04_","level":"error","message":"Response error","status":1}
