@@ -3,7 +3,12 @@ const BotEvents = require('viber-bot').Events;
 const TextMessage = require('viber-bot').Message.Text;
 const winston = require('winston');
 const express = require('express');
-const app = express();
+var cors = require('cors')
+var app = express()
+
+app.use(cors())
+app.use(express.json())
+
 const config = require('./config.json');
 
 let logger = winston.createLogger({
@@ -28,6 +33,18 @@ bot.on(BotEvents.MESSAGE_RECEIVED, (message, response) => {
 // Bind the bot middleware to the app instance
 const webhookUrl = "https://webhook.site/0ac43896-99be-4f5b-af31-d7feeccf73b4/viber/webhook";
 app.use('/viber/webhook', bot.middleware());
+
+app.post('/feedback/send', (request, response) => {
+    //bot.sendMessage(bot.getBotProfile(), new TextMessage(request.body), null, null);
+
+    const text = JSON.stringify(` Имя: ${request.body.name} \n Телефон: ${request.body.phone} \n Текст обращения: ${request.body.text} `);
+    const sampleMinApiVersion = 2;
+    const sampleMessage = new TextMessage(text, null, null, null, null, sampleMinApiVersion);
+
+    bot.sendMessage(sampleMessage);
+debugger
+    console.log(request.body.name)
+})
 
 // Webhook will be used for receiving callbacks and user messages from Viber
 app.listen(config.port, () => {
