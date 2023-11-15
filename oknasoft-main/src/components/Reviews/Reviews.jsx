@@ -38,19 +38,19 @@ export const Reviews = ({ revRef }) => {
 
   const slides = [
     {
-      author: "author name",
-      star: 4,
-      text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus rem distinctio corrupti, error vero ratione provident vitae optio laudantium sapiente iste, commodi quas doloremque iusto temporibus sit blanditiis dolor cupiditate?",
+      author: "Анна",
+      star: 5,
+      text: "Добрый день! Заказывали остекление крыльца. Все быстро и качественно, приятные цены по рынку, минимальные сроки изготовления.",
     },
     {
-      author: "author name",
+      author: "Раиса",
       star: 5,
-      text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus rem distinctio corrupti, error vero ratione provident vitae optio laudantium sapiente iste, commodi quas doloremque iusto temporibus sit blanditiis dolor cupiditate?",
+      text: "Здравствуйте! Мой отзыв на работу мастера - 5 баллов. Мастер оперативно приехал на замер балкона. Изготовили, привезли и установили за неделю, мастер Андрей - золото, починил еще дополнительно балконную дверь и окно, установленную другой компанией, хотя я обращалась в другие компании и мне говорили, что скорее всего нужно будет менять дверь. Еще раз спасибо за отзывчивость и исполнительность! ",
     },
     {
-      author: "author name",
+      author: "Александр",
       star: 5,
-      text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus rem distinctio corrupti, error vero ratione provident vitae optio laudantium sapiente iste, commodi quas doloremque iusto temporibus sit blanditiis dolor cupiditate?",
+      text: "Всем привет! Заказывал окна в частный дом, порадовало, что не пришлось даже возиться с внешней отделкой, просто заказл у мастера и теперь красота как снаружи, так и внутри! Круто, мастеру Андрею респект и 5 звезд!",
     }
   ];
 

@@ -32,9 +32,9 @@ export const Sidebar = ({
         <button onClick={scrollToAdv} className={styles.sidebarItem}>
           НАШИ ПРЕИМУЩЕСТВА
         </button>
-        <button onClick={scrollToCalc} className={styles.sidebarItem}>
-          РАСЧЕТ СТОИМОСТИ
-        </button>
+        {/*<button onClick={scrollToCalc} className={styles.sidebarItem}>*/}
+        {/*  РАСЧЕТ СТОИМОСТИ*/}
+        {/*</button>*/}
         <button onClick={scrollToWorks} className={styles.sidebarItem}>
           НАШИ РАБОТЫ
         </button>

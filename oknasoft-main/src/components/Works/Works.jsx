@@ -4,6 +4,8 @@ import Slider from "react-slick";
 import livingRoom from "../../assets/images/photo_2023-07-29_23-12-10.png";
 import kitchen from "../../assets/images/photo_2023-07-29_23-12-38.png";
 import bedroom from "../../assets/images/photo_2023-07-29_23-12-49.png";
+import andrew1 from "../../assets/images/andrew-1.jpg"
+import andrew2 from "../../assets/images/andrew-2.jpg"
 
 export const Works = ({ worksRef }) => {
   const sliderRef = useRef();
@@ -41,6 +43,8 @@ export const Works = ({ worksRef }) => {
     { src: livingRoom, alt: "livingRoom" },
     { src: kitchen, alt: "kitchen" },
     { src: bedroom, alt: "bedroom" },
+    { src: andrew1, alt: "andrew1" },
+    { src: andrew2, alt: "andrew2"}
   ];
 
   return (

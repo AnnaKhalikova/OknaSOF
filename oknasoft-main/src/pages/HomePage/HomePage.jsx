@@ -15,15 +15,15 @@ export const HomePage = ({ advRef, worksRef, revRef, formRef, calcRef }) => {
   return (
     <>
       <Main />
-      <Consult />
+      {/*<Consult />*/}
       <Advantages advRef={advRef} />
-      <Calculator calcRef={calcRef} />
+      {/*<Calculator calcRef={calcRef} />*/}
       <Works worksRef={worksRef} />
-      {/*<Videos />*/}
+      <Videos />
       <div className={styles.wrapper}>
-        <Form formRef={formRef} />
+        {/*<Form formRef={formRef} />*/}
         <Reviews revRef={revRef} />
-        <Final />
+        {/*<Final />*/}
       </div>
     </>
   );

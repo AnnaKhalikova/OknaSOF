@@ -6,7 +6,8 @@ export const Main = () => {
       <h1 className={styles.title}>
           OknaSOF <br />
         <span style={{ color: "#fff" }}>Окна и двери ПВХ</span><br />
-        <span style={{ color: "#fff" }}>Работаем в Могилеве и области</span>
+        <span style={{ color: "#fff" }}>Работаем в Могилеве и области</span><br /><br />
+        <span style={{ color: "#fff" }}>+375 (29) 671-40-04</span><br /><br />
       </h1>
       <p className={styles.subtitle}>От производителя</p>
       <p className={styles.listTitle}>

@@ -2,7 +2,7 @@
   "token": "511779c99627dea2-7043add9cda9ca7c-9766d2a0e60ff436",
   "uri": "oknasofbot",
   "name": "OknaSofBot",
-  "expose_domain": "https://webhook.site/2a8a9f84-6bdd-46ce-b9ba-318ab695e2c7",
+  "expose_domain": "https://408e-5-100-193-53.ngrok.io",
   "expose_uri_path": "/viber/webhook",
   "port": 8080
 }

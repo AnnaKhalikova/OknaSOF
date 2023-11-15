@@ -21,10 +21,10 @@ export const Footer = ({ scrollToForm }) => {
           <img className={styles.contactsImg} src={phone} alt="" />
           <a href="tel:+48536065365">+375 (29) 671-40-04</a>
         </div>
-        <button onClick={scrollToForm} className={styles.feedbackBtn}>
-          <img className={styles.contactsImg} src={support_agent} alt="" />
-          <p className={styles.feedbackBtnText}>Заказать обратный звонок</p>
-        </button>
+        {/*<button onClick={scrollToForm} className={styles.feedbackBtn}>*/}
+        {/*  <img className={styles.contactsImg} src={support_agent} alt="" />*/}
+        {/*  <p className={styles.feedbackBtnText}>Заказать обратный звонок</p>*/}
+        {/*</button>*/}
       </div>
     </footer>
   );
